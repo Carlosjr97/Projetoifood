@@ -127,3 +127,98 @@ video {
         transform: scale(1); /* Volta ao tamanho normal */
     }
 }
+
+/* Estilo para telas maiores que 1200px (desktops grandes) */
+@media (min-width: 1200px) {
+    video {
+        max-width: 50%; /* Aumenta o tamanho permitido do vídeo */
+    }
+
+    .corner-image {
+        width: 150px; /* Ajusta o tamanho da imagem no canto */
+        height: 150px;
+    }
+
+    .btn-voltar {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    h1 {
+        font-size: 32px; /* Títulos maiores em telas grandes */
+    }
+
+    p {
+        font-size: 20px; /* Texto mais legível */
+    }
+    
+    .logo a img {
+        width: 200px; /* Ajusta proporção para o logo */
+    }
+}
+
+/* Estilo para telas médias (entre tablets e desktops pequenos) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    video {
+        max-width: 60%;
+    }
+
+    .corner-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn-voltar {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .logo a img {
+        width: 170px;
+    }
+}
+
+/* Estilo para telas pequenas (celulares) */
+@media (max-width: 767px) {
+    body {
+        flex-direction: column; /* Garante que os itens fiquem empilhados */
+        padding: 10px;
+        height: auto; /* Permite scroll */
+    }
+
+    video {
+        max-width: 90%; /* Ocupa quase toda a largura */
+    }
+
+    .corner-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn-voltar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center; /* Centraliza texto em tela pequena */
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .logo a img {
+        width: 120px;
+    }
+}
