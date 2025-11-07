@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(190deg, #000, #9400D3);
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.corner-image {
+    position: absolute; /* Define posição absoluta na página */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    width: 100px; /* Tamanho personalizado */
+    height: 100px;
+    z-index: 10; /* Garante que fique na frente de outros elementos (se necessário) */
+}
+
+.corner-image img {
+    width: 60%;
+}
+
+
+
+
+        /* Estilo do botão Voltar */
+        .btn-voltar {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #ff0043, #ff6b00);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .btn-voltar:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #ff6b00, #ff0043);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+        }
+
+        .btn-voltar:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .btn-voltar span {
+            margin-left: 6px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Vídeo centralizado */
+video {
+    max-width: 40%; /* Responsividade para vídeos */
+    height: auto;
+    margin-bottom: 20px; /* Distância entre o vídeo e o logo */
+}
+
+/* Animação destacando que o logo é clicável */
+.logo a img {
+    width: 150px;
+    height: auto;
+    animation: pulse 2s infinite; /* Efeito repetido */
+    transition: transform 0.3s ease; /* Transição ao passar o mouse */
+    cursor: pointer; /* Mostra que é clicável */
+}
+
+.logo a img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+
+
+        h1 {
+            color: white;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+        }
+        .emoji {
+            font-size: 24px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animação de pulsar (sutil) */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamanho normal */
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta 5% no tamanho */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho normal */
+    }
+}
