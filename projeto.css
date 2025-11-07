@@ -131,7 +131,7 @@ video {
 /* Estilo para telas maiores que 1200px (desktops grandes) */
 @media (min-width: 1200px) {
     video {
-        max-width: 50%; /* Aumenta o tamanho permitido do vídeo */
+        max-width: 40%; /* Aumenta o tamanho permitido do vídeo */
     }
 
     .corner-image {
