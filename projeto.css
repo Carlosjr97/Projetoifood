@@ -188,11 +188,7 @@ video {
 
 /* Estilo para telas pequenas (celulares) */
 @media (max-width: 767px) {
-    body {
-        flex-direction: column; /* Garante que os itens fiquem empilhados */
-        padding: 10px;
-        height: auto; /* Permite scroll */
-    }
+
 
     video {
         max-width: 90%; /* Ocupa quase toda a largura */
