@@ -160,7 +160,7 @@ video {
 /* Estilo para telas médias (entre tablets e desktops pequenos) */
 @media (max-width: 1199px) and (min-width: 768px) {
     video {
-        max-width: 60%;
+        max-width: 40%;
     }
 
     .corner-image {
